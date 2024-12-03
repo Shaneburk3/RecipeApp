@@ -1,8 +1,16 @@
 Rails.application.routes.draw do
+  get "home/about"
+  get "home/contact"
+
+  get 'about', to: 'home#about', as: 'about'
+  get 'contact', to: 'home#contact', as: 'contact'
+
   resources :recipes
 
   root 'recipes#index'
-  
+
+
+
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.

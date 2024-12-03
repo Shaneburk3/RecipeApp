@@ -23,6 +23,11 @@
   </head>
 
   <body>
+    <header>
+      <%= render "layouts/nav" %>
+    </header>
     <%= yield %>
+
+    <%= render "layouts/footer" %>
   </body>
 </html>
