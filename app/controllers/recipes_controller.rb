@@ -2,7 +2,7 @@ class RecipesController < ApplicationController
   before_action :set_recipe, only: %i[ show edit update destroy ]
 
   def about
-    
+    @page_title = "About us"
   end
 
   # GET /recipes or /recipes.json
@@ -12,10 +12,12 @@ class RecipesController < ApplicationController
 
   # GET /recipes/1 or /recipes/1.json
   def show
+    @page_title = "New Details"
   end
 
   # GET /recipes/new
   def new
+    @page_title = "New Recipe"
     @recipe = Recipe.new
   end
 
