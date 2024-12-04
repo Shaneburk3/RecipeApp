@@ -1,14 +1,14 @@
 <% content_for :title, "Editing recipe" %>
 
-<h1>Editing recipe</h1>
-
-<%= render "form", recipe: @recipe %>
-
-<br>
-
-
-<div class="btn-group" role="group" aria-label="Default button group">
-  <%= link_to "Show this recipe", @recipe, class:"btn btn-outline-primary" %>
-  <%= link_to "Back to recipes", recipes_path, class:"btn btn-outline-primary"%>
-</div>
-<br>
+  <h1>Editing recipe</h1>
+  
+  <%= render "form", recipe: @recipe %>
+  
+  <br>
+  
+  
+  <div class="btn-group" role="group" aria-label="Default button group">
+    <%= link_to "Show this recipe", @recipe, class:"btn btn-outline-primary" %>
+    <%= link_to "Back to recipes", recipes_path, class:"btn btn-outline-primary"%>
+  </div>
+  <br>

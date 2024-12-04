@@ -30,8 +30,10 @@
     <header>
       <%= render "layouts/nav" %>
     </header>
-    <%= yield %>
-    <br>
+    <div class="container-md">
+      <%= yield %>
+      <br>
+    </div>
     <%= render "layouts/footer" %>
   </body>
 </html>
