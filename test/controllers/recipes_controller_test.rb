@@ -10,6 +10,12 @@ class RecipesControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
+  #This Funcional test will fail.
+  test "Try to get pizza" do
+    get '/pizza'
+    assert_response :success
+  end
+
   test "should get new" do
     get new_recipe_url
     assert_response :success
