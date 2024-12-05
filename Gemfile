@@ -59,6 +59,8 @@ group :development, :test do
   gem "ruby_audit"
 
   gem "pg"
+  #for heroku deployment
+  gem 'rails_12factor'
 
   gem "importmap"
 
