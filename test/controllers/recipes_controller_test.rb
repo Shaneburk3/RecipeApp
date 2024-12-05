@@ -10,9 +10,9 @@ class RecipesControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
-  #This Funcional test will check for page /pizza. return 404.
+  # This Funcional test will check for page /pizza. return 404.
   test "Try to get pizza" do
-    get '/pizza'
+    get "/pizza"
     assert_response 404
   end
 

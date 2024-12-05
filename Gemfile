@@ -7,7 +7,7 @@ gem "propshaft"
 # Use sqlite3 as the database for Active Record
 # gem "sqlite3", ">= 2.1"
 # Use postgreSQL as the database for Active Record
-gem 'pg'
+# gem 'pg'
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", ">= 5.0"
 # Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
@@ -47,10 +47,20 @@ group :development, :test do
   gem "debug", platforms: %i[ mri windows ], require: "debug/prelude"
 
   # Static analysis for security vulnerabilities [https://brakemanscanner.org/]
-  gem "brakeman", require: false
+  # gem "brakeman", require: false
 
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem "rubocop-rails-omakase", require: false
+
+  gem "brakeman"
+
+  gem "bundle-audit"
+
+  gem "ruby_audit"
+
+  gem "pg"
+
+  # gem 'rubocop'
 end
 
 group :development do
@@ -61,6 +71,6 @@ end
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem "capybara"
-  #gem 'webdrivers'
+  # gem 'webdrivers'
   gem "selenium-webdriver"
 end

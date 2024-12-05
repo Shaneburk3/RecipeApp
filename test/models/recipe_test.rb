@@ -1,5 +1,5 @@
 require "test_helper"
-# New recipe, with no parameters. 
+# New recipe, with no parameters.
 class RecipeTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true

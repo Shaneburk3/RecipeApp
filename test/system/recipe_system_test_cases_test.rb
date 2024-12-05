@@ -12,11 +12,10 @@ class RecipeSystemTestCasesTest < ApplicationSystemTestCase
     fill_in "Name",	with: "Bacon Cheeseburger"
     fill_in "Ingredients",	with: "bun, beef, lettuce, cheese, bacon"
     fill_in "Instructions",	with: "toast buns, cook pattys on grill, add cheese, bacon, lettuce."
-    fill_in "Difficulty",	with: "Easy"   
-    
+    fill_in "Difficulty",	with: "Easy"
+
     click_on "Create Recipe"
     assert_text "Recipe was successfully created."
     assert_text "Bacon Cheeseburger"
   end
-
 end
