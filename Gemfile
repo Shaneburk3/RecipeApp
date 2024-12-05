@@ -60,6 +60,8 @@ group :development, :test do
 
   gem "pg"
 
+  gem "importmap"
+
   # gem 'rubocop'
 end
 

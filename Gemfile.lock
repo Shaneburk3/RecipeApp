@@ -121,6 +121,12 @@ GEM
       activesupport (>= 6.1)
     i18n (1.14.6)
       concurrent-ruby (~> 1.0)
+    importmap (0.1.0)
+      activesupport
+      memoist
+      rainbow
+      thor
+      zeitwerk
     importmap-rails (2.0.3)
       actionpack (>= 6.0.0)
       activesupport (>= 6.0.0)
@@ -156,6 +162,7 @@ GEM
       net-smtp
     marcel (1.0.4)
     matrix (0.4.2)
+    memoist (0.16.2)
     mini_mime (1.1.5)
     minitest (5.25.2)
     msgpack (1.7.5)
@@ -365,6 +372,7 @@ DEPENDENCIES
   bundle-audit
   capybara
   debug
+  importmap
   importmap-rails
   jbuilder
   kamal
