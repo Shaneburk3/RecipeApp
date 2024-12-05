@@ -10,7 +10,7 @@ class RecipesTest < ApplicationSystemTestCase
     assert_selector "h1", text: "Recipes"
   end
 
-  test "should create recipe" do
+  test "should create a new recipe" do
     visit recipes_url
     click_on "New recipe"
 
