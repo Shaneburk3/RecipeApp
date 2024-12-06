@@ -379,6 +379,7 @@ DEPENDENCIES
   bootsnap
   brakeman
   bundle-audit
+  bundler
   capybara
   debug
   importmap
