@@ -64,6 +64,7 @@ group :development, :test do
 
   gem "pg"
   gem "pg", group: :production
+  gem 'rails_12factor', group: :production
   # for heroku deployment
   gem "rails_12factor"
 
