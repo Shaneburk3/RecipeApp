@@ -23,8 +23,8 @@ development:
 test:
   <<: *default
   database: recipe_app_test
-  username: <%= ENV["postgres"]%>
-  password: # <%= ENV["DB_PASSWORD"]%>
+  # username: <%= ENV["postgres"]%>
+  # password: # <%= ENV["DB_PASSWORD"]%>
   host: localhost
 
 
