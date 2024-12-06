@@ -33,7 +33,7 @@ test:
 production:
   primary:
     <<: *default
-    recipe_app_production
+    # recipe_app_production
     url: <%= ENV['DATABASE_URL'] %>
     # username: <%= ENV["postgres"]%>
     # password: <%= ENV["DB_PASSWORD"]%>
