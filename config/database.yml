@@ -34,7 +34,7 @@ production:
   primary:
     <<: *default
     recipe_app_production
-    # database: <%= ENV['DATABASE_URL'] %>
+    url: <%= ENV['DATABASE_URL'] %>
     # username: <%= ENV["postgres"]%>
     # password: <%= ENV["DB_PASSWORD"]%>
   cache:
