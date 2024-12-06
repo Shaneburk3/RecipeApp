@@ -21,7 +21,7 @@ gem "stimulus-rails"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
 
-gem 'bundler'
+gem "bundler"
 
 # Use Active Model has_secure_password [https://guides.rubyonrails.org/active_model_basics.html#securepassword]
 # gem "bcrypt", "~> 3.1.7"
@@ -63,6 +63,7 @@ group :development, :test do
   gem "ruby_audit"
 
   gem "pg"
+  gem "pg", group: :production
   # for heroku deployment
   gem "rails_12factor"
 
@@ -73,8 +74,8 @@ end
 
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
-  gem 'pg'
-  gem 'rails_12factor'
+  gem "pg"
+  gem "rails_12factor"
   gem "web-console"
 end
 
