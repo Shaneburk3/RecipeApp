@@ -69,8 +69,6 @@ group :development, :test do
   gem "rails_12factor"
 
   gem "importmap"
-
-  # gem 'rubocop'
 end
 
 group :development do
