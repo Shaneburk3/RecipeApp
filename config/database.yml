@@ -32,7 +32,7 @@ test:
 # is mounted as a persistent Docker volume in config/deploy.yml.
 production:
   primary:
-    <<: *default
+    <<: *primary
     # recipe_app_production
     url: <%= ENV['DATABASE_URL'] %>
     # username: <%= ENV["postgres"]%>
