@@ -23,9 +23,9 @@ development:
 test:
   <<: *default
   database: recipe_app_test
-  username: <%= ENV["postgres"]%>
-  password: <%= ENV["DB_PASSWORD"]%>
-  host: localhost
+  #username: <%= ENV["postgres"]%>
+  #password: <%= ENV["DB_PASSWORD"]%>
+  #host: localhost
 
 
 # Store production database in the storage/ directory, which by default
